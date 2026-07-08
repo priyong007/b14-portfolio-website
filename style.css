@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+/* common style */
+.common-btn{
+    background-color: #FD6E0A;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.outline-btn{
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
+    cursor: pointer;
+}
+.hero-left-btn-parent{
+    margin-top: 12px;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    font-weight: bold;
+    font-size: 32px;
+}
+.logo-r{
+    color: #FD6E0A;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+
+ul li a{
+    text-decoration: none;
+
+}
+/* hero section start here */
+.hero-parent-root{
+    background-color: #FFF8F3;
+
+}
+.hero-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.hero-left-p1{
+    font-size: 28px;
+    font-weight: 600;
+}  
+.hero-left h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+  /* about section start  */
+.about-parent{
+    background-color: #FFF8F3;
+    margin: 75px auto;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+.about-parent p{
+    margin: 15px;    
+}
+.about-parent h2{
+    margin: 15px;
+    font-size: 16px;    
+}
+.about-box-parent{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.about-box-parent .box{
+    background-color: #f8eae0;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* what i do section start */
+.what-i-do-parent{
+    margin: 70px auto;
+    text-align: center;
+}
+.what-i-do-card-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.what-i-do-card-container .What-i-do-card{
+    border: 2px solid #FD6E0A;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: left;
+}
+.what-i-do-card-container .What-i-do-card h3{
+    margin: 10px 0;
+
+}
+.what-i-do-card-container .What-i-do-card p{
+    color: #757575;
+    font-size: 14px;
+    padding: 8px 0;
+}
+/* A summary of My Resume start */
+.resume-parent{
+    margin: 70px auto;
+    text-align: center;
+    
+}
+.resume-parent h2{
+    margin: 80px auto;
+}
+.resume-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.resume-container .resume-left-row{
+    text-align: left;
+}
+.resume-container .resume-left-row h3{
+    margin: 30px 0;
+}
+.resume-container .resume-left-row .left-resume-card h5{
+    
+    font-weight: 600;
+    color: #757575;
+}
+.resume-container .resume-right-row{
+    text-align: left;
+}
+.resume-container .resume-right-row h3{
+    margin: 30px 0;
+}
+.resume-container .resume-right-row .right-resume-card h5{
+    
+    font-weight: 600;
+    color: #757575;
+}
+.left-resume-card{
+    padding: 20px 0;
+}
+.right-resume-card{
+    padding: 20px 0;
+}
+.left-resume-card p{
+    margin: 15px 0;
+}
+.right-resume-card p{
+    margin: 15px 0;
+}
+.download-cv-btn{
+    background-color: #FD6E0A;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* my resume section end my amazing work start */
+.my-amazing-parent{
+    margin: 70px auto;
+    text-align: center;
+}
+.galary-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 25px;
+    gap: 10px;
+    grid-auto-rows: 250px;
+    grid-template-areas:
+    "one two three"
+    "four two six"
+    "four five six";
+}
+.galary-parent img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.box-1{
+    grid-area: one;
+}
+.box-2{
+    grid-area: two;
+}
+.box-3{
+    grid-area: three;
+}
+.box-4{
+    grid-area: four;
+}
+.box-5{
+    grid-area: five;
+}
+.box-6{
+    grid-area: six;
+}
+/* my amazing work end footer section start */
+.footer-section-root{
+    background-color: #FFF8F3;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 15px;
+    margin: 70px auto;
+    /* margin: 70px !important; */
+    text-align: center;
+    
+    padding: 8px;
+}
+.footer-left{
+    margin-top: 50px;
+    text-align: left;
+    gap: 10px;
+    padding-left: 40px;
+    margin-left: 20px;   
+}
+
+.footer-right{
+    margin-top: 50px;
+    text-align: left;
+}
+.footer-left p{
+    margin: 20px 0;
+    text-align: left;
+    
+}
+footer form{
+    margin: 20px 0;
+    text-align: left;
+}
+footer form input, footer form textarea{
+    background-color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.footer-icon-font span{
+    color: #FD6E0A;
+    font-size: 20px;
+}
+
